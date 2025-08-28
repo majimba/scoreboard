@@ -33,14 +33,14 @@ function saveToHistory() {
 function addScore(team, points) {
     // Input validation
     if (!team || !points || points < 1 || points > 3) {
-        console.error('Invalid input: team must be "home" or "guest", points must be 1, 2, or 3');
+        console.error('Invalid input: team must be "home" or "away", points must be 1, 2, or 3');
         return;
     }
     
     if (team === 'home') {
         homeScore += points;
         homeScoreElement.textContent = homeScore;
-    } else if (team === 'guest') {
+    } else if (team === 'away') {
         guestScore += points;
         guestScoreElement.textContent = guestScore;
     } else {
