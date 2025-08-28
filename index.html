@@ -9,8 +9,6 @@
     <body>
         <h1 class="main-heading">Luminary Basketball</h1>
         <div class="control-buttons">
-            <button class="control-btn undo-btn" onclick="undoScore()">↶ Undo</button>
-            <button class="control-btn redo-btn" onclick="redoScore()">↷ Redo</button>
             <button class="control-btn reset-btn" onclick="resetScores()">Reset Scores</button>
         </div>
         <div class="container">
@@ -32,6 +30,10 @@
                     <button class="score-btn" onclick="addScore('away', 3)">+3</button>
                 </div>
             </div>
+        </div>
+        <div class="game-controls">
+            <button class="control-btn undo-btn" onclick="undoScore()">↶ Undo</button>
+            <button class="control-btn redo-btn" onclick="redoScore()">↷ Redo</button>
         </div>
         <script src="index.js"></script>
     </body>

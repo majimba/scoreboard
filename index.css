@@ -35,6 +35,15 @@ body {
     justify-content: center;
 }
 
+/* Game controls - Undo/Redo buttons below scorecard */
+.game-controls {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 /* Control button base styles */
 .control-btn {
     padding: 10px 20px;
