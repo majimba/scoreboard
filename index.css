@@ -18,12 +18,59 @@ body {
 /* Main heading */
 .main-heading {
     color: white;
-    font-size: 32px;
-    font-weight: bold;
+    font-size: 48px;
+    font-weight: 900;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.main-heading:hover {
+    color: #F94F6D;
+    transform: scale(1.05);
+    text-shadow: 3px 3px 6px rgba(249, 79, 109, 0.3);
+}
+
+.main-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #F94F6D, #FF69B4);
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.main-heading:hover::after {
+    width: 80%;
+}
+
+/* Responsive design for main heading */
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 36px;
+        letter-spacing: 2px;
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-heading {
+        font-size: 28px;
+        letter-spacing: 1px;
+        padding: 12px;
+        margin-bottom: 20px;
+    }
 }
 
 /* Control buttons container */
